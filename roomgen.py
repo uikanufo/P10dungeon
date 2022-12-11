@@ -28,6 +28,15 @@ class Room:
         else:
             print("Ahne peruna :P")
 
-peruna = Room()
-peruna.search()
-peruna.search()
+class Ungeon:
+    def __init__(self):
+        self.rooms = []
+    def add_room(self):
+        kaali = Room()
+        self.rooms.append(kaali)
+
+
+peruna = Ungeon()
+peruna.add_room()
+print(peruna.rooms)
+
