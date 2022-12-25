@@ -32,6 +32,8 @@ class Player_Character:
         self.food = 20
         self.backpack = []
         self.belt = {slot : "empty" for slot in range(1,6)}
+        self.gold = 0
+        self.health = 20
 
 
 

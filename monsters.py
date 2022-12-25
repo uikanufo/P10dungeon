@@ -16,8 +16,6 @@ def fetch(file):
         list.append(line)
     return list
 
-with open("./Monsters.csv") as file:
-    print(fetch(file))
 
 def make_table(file):
     type = []
@@ -25,4 +23,5 @@ def make_table(file):
         type.append(fetch(source))
     return type
 
-print(make_table("./Monsters.csv"))
+if __name__ == "__main__":
+    print(make_table("./Monsters.csv"))
