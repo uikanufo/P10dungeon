@@ -28,6 +28,7 @@ def actions(character):
     while True:
         print("You are in town. What do you want to do?")
         print("1 heal\n2 Go to a dungeon\n3 Save and exit")
+        print(f"You currently have {character.gold} gold pieces")
         actions = {
             1 : heal,
             3 : save_and_exit
