@@ -43,10 +43,11 @@ class Ungeon:
         self.player_position = [0, 0]
         self.roomdex = [0, 0] 
 
-    def current_room(self):
-        positions = []
-        for room in self.rooms:
-            positions.append(room.position())
+#    def current_room(self):
+#        
+#        positions = []
+#        for room in self.rooms:
+#            positions.append(room.position())
         
 
 
@@ -77,7 +78,7 @@ class Ungeon:
             self.add_room()
         
     def search(self):
-        self.current_room(self).search()
+        self.current_room().search()
 
 
     
